@@ -47,7 +47,6 @@ a:hover {
 
 body {
   font-family: var(--font-family1);
-  color: var(--secondary-color)
 }
 
 nav {
@@ -55,9 +54,10 @@ nav {
   top: 0;
   left: 0;
   z-index: 1;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
@@ -83,7 +83,7 @@ nav ul {
 }
 
 nav ul li {
-    font-weight: var(--bolder-font1);
+    font-weight: var(--bold-font1);
 }
 
 .burger-menu {
@@ -120,8 +120,6 @@ nav ul li {
 
 .bio h1 {
   margin-bottom: var(--bottom-margin);
-  align-items: center;
-  color: var(--third-color)
 }
 
 .bio p {
@@ -157,7 +155,7 @@ nav ul li {
 }
 
 .skills-wrapper img {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .icon-card {
