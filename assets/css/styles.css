@@ -172,12 +172,12 @@ nav ul li {
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .project-pic {
-  width: 70%;
-  height: 65%;
+  width: 65%;
+  height: 60%;
 }
 
 .projects-container {
@@ -188,17 +188,17 @@ nav ul li {
 
 .projects-title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project-container {
   text-align: center;
-  width: 30rem;
-  padding: 5rem;
+  width: 21.875rem;
+  padding: 1rem;
 }
 
 .project-container p {
-  padding: 1rem;
+  padding: 0.4rem;
 }
 
 .project-title {
@@ -213,8 +213,8 @@ nav ul li {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 30px;
-  margin: 20px;
+  padding: 20px;
+  margin: 10px;
 }
 
 .contact {
@@ -260,3 +260,22 @@ nav ul li {
   padding: 0.5rem;
   color: var(--primary-color);
 }
+
+.submit-btn{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
