@@ -1,0 +1,95 @@
+--HTML--
+<section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="assets/images/expenseTracker.png" 
+          alt="expense-tracker"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Water Bottle Case with a Storage Compartment </h3>
+        <p class="project-details">
+          This was for a class design project. It was my first time 3D printing something I designed in Solidworks. 
+          Its not much but it still blows my mind knowing I turned a figment of my imagination into a real physical object.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="assets/images/netflixClone.png"
+          alt="netflic-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">CFD analysis of Supersonic Flow in Solidworks</h3>
+        <p class="project-details">
+          While learning about Supersonic flow in my fluids class I tried to model the behavior of a supersonic converging-diverging nozzle using Solidworks CFD. 
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="assets/images/greenyEarth.png"
+          alt="Poster design"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Rocketry Club Concept Poster</h3>
+        <p class="project-details">
+          This is a mockup poster I made for Clarkson's Rocketry Club one day when I was bored in my Thermodynamics class. Created in Adobe Illustrator, the wording of the poster uses the 1970's NASA worm logo font
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section>
+
+--CSS--
+
+.projects {
+  background-color: var(--bg-color);
+
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
