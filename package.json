@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/pohlaj/Andrew-Pohl-Portfolio/issues"
   },
-  "homepage": "https://github.com/pohlaj/Andrew-Pohl-Portfolio#readme"
+  "homepage": "https://github.com/pohlaj/Andrew-Pohl-Portfolio#readme",
+  "dependencies": {
+    "cube-gallery-js": "^1.0.0",
+    "mdb-ui-kit": "^4.0.0"
+  }
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&display=swap');
+@import '~mdb-ui-kit/css/mdb.min.css';
 
 /* Variables */ 
 
@@ -10,12 +11,13 @@
   --bold-font: 400;
   --bolder-font1: 700;
   --bg-color1: rgb(245, 245, 245);
-  --primary-color: #c5c5c5;
-  --secondary-color: #ff9a6c;
+  --primary-color: #000000;
+  --secondary-color: #242424;
   --third-color: #347c01;
-  --primary-shadow: #95bfcd;
-  --secondary-shadow: #484d49;
+  --primary-shadow: #3b3b3b;
+  --secondary-shadow: #000000;
   --transition: 0.3s;
+  --bottom-margin: 2rem;
 }
 
 html {
@@ -40,31 +42,60 @@ h2 {
   font-family: var(--font-family2);
 }
 
+h3 {
+  font-weight: 400;
+  font-family: var(--font-family1);
+  color: rgb(0, 0, 0);
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: .5s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .navbar {
   position: sticky;
   top: 0;
   left: 0;
   z-index: 2;
-
 }
 
-.navbar a h1 {
-  color: rgb(0, 0, 0);
+.navbar-brand h1 {
   transition: var(--transition);
+  margin-left: 2rem;
 }
 
+.navbar-brand h3 {
+  transition: var(--transition);
+  vertical-align: baseline;
+}
 .navbar a:hover {
-color: white;
-border-bottom: 2px solid white
+  color: white;
+  border-bottom: 2px solid white
+
 }
 
 .navbar ul {
-  display: flex;
+  align-content: center;
+  
 }
 
 .navbar ul li {
   font-weight: var(--bold-font1);
+  color:rgb(0, 0, 0)
 }
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
 
 .hero {
   display: flex;
@@ -78,6 +109,7 @@ border-bottom: 2px solid white
   width: 37.5rem;
   border-radius: 50%;
   padding-top: 1em;
+  animation-delay: 2s;
 }
 
 .bio {
@@ -85,14 +117,15 @@ border-bottom: 2px solid white
   background-color: var(--bg-color1);
   box-shadow: 0px 1px 7.5px 2px var(--primary-shadow);
   font-weight: 700;
+  animation: 1s;
 }
 
 .more-about {
   background-color: var(--bg-color);
-  padding: 2rem;
+  margin: 4rem;
 }
 
-.more-about h2 {
+.more-about-header {
   margin-bottom: var(--bottom-margin);
   text-align: center;
 }
@@ -105,11 +138,11 @@ border-bottom: 2px solid white
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
-  margin-top: 2.5rem;
+  padding: 4rem;
 }
 
 .skill-header {
-  margin-bottom: 1rem;
+  margin-bottom: var(--bottom-margin);
 }
 
 .skills-wrapper img {
@@ -129,19 +162,23 @@ border-bottom: 2px solid white
   height: 11.25rem;
 }
 
+.projects-header{
+  margin-bottom: var(--bottom-margin);
+}
+
 .projects {
   text-align: center;
-  padding: 10rem;
+  padding: 4rem;
   color: rgb(0, 0, 0);
 }
 
 .contact {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .contact h2 {
   text-align: center;
-  margin-bottom: var(--bottom-margin-2);
+  margin-bottom: 1rem;
 }
 
 .contact-form-container {
@@ -184,8 +221,6 @@ border-bottom: 2px solid white
   padding: 10px;
   margin: 10px 0;
   background-color: #fff;
-  border: 2px solid var(--primary-color);
-  border-radius: 5px;
   font-size: 1rem;
   font-weight: var(--bold-font);
   transition: var(--transition);
@@ -230,18 +265,19 @@ footer {
   height: 3rem;
 }
 
+
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
 
 .hero {
-  margin-top: -4rem;
+  margin-top: 4rem;
   flex-direction: column;
   gap: 0;
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  height: 23rem;
+  width: 23rem;
 }
 
 .bio {
@@ -249,28 +285,15 @@ footer {
   width: 20.5rem;
 }
 
-.more-about {
-  margin-top: 2rem;
-  padding: 1rem 3.5rem;
-}
-
 .more-about h2 {
   text-align: center;
 }
 
-.more-about p {
-  text-align: justify;
-}
-
-.icon {
-  width: 5.875rem;
-  height: 5.25rem;
-}
 }
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
+    height: 23rem;
     width: 23rem;
   }
 
@@ -282,3 +305,5 @@ footer {
     max-width: 17.75rem;
   }
 }
+
+

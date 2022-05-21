@@ -44,9 +44,10 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <h1> ANDREW POHL</h1></a>
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+        <h1>ANDREW POHL/</h1><span class="css-typing"><h3>Engineering</h3></span>
+        </span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,7 +64,7 @@
               <a class="nav-link active" href="#">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Contact me</a>
+              <a class="nav-link active" href="Contact-Me.html">Contact me</a>
             </li>
           </ul>
         </div>
@@ -82,21 +83,22 @@
           loading="lazy"
           class="img-fluid"
         />
-      </div>
-        <div class="col-4">
+        </div>
+          <div class="col-4">
           <h2 class="bio-title">Howdy!</h2>
           <p class="bio-text">
-            This is a work in progress space to showcase the stuff I'm proud of I guess...
+            This is a work in progress space to showcase the stuff I've made and am proud of! I hope you enjoy it as much as I do!
           </p>
+          </div>
         </div>
-      </div>
-    </div> 
+      </div> 
   </section>
 
     <!-- More about -->
     <section class="more-about">
+      <div class="reveal">
       <div class="container">
-        <h2>About Me</h2>
+        <h2 class="more-about-header">About Me</h2>
         <div row>
         <p>
           I am currently a 3rd year student at Clarkson University majoring in Mechanical Engineering 
@@ -106,10 +108,12 @@
         </p>
       </div>
       </div>
-      </section>
+      </div>
+    </section>
     <!-- Skills section -->
 
     <section class="skills" id="skills">
+      <div class="reveal">
       <div class="container">
       <h2 class="skill-header">My Top Skills</h2>
 
@@ -157,18 +161,19 @@
             class="icon icon-card"
           />
         </div>
+        </div>
       </div>
-    </div>
+      </div>
     </section>
 
     <!-- Projects section -->
   <section class="projects" id="projects">
-    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="reveal">
+    <h2 class="projects-header">Some of my Recent Projects</h2>
     <div class="container">
     <div id="projectcarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-mdb-target="#projectcarousel" data-mdb-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
+        <button type="button" data-mdb-target="#projectcarousel" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-mdb-target="#projectcarousel" data-mdb-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-mdb-target="#projectcarousel" data-mdb-slide-to="2" aria-label="Slide 3"></button>
       </div>
@@ -197,95 +202,23 @@
           </div>
       </div>
     </div>
-  <button class="carousel-control-prev" type="button" data-mdb-target="#projectcarousel" data-mdb-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-mdb-target="#projectcarousel" data-mdb-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#projectcarousel" data-mdb-slide="prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewbox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+      </svg>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#projectcarousel" data-mdb-slide="next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewbox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+  </div>
   </div>
   </div>
 </section>
 
 <!-- Contact section -->
-<section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-        <a href="#" target="_blank"
-          ><img
-            src="assets/icons/icons8-twitter-circled.gif"
-            alt="Twitter"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="#" target="_blank"
-          ><img
-            src="assets/icons/icons8-instagram.gif"
-            alt="Instagram"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="#" target="_blank"
-          ><img
-            src="assets/icons/icons8-linkedin-circled.gif"
-            alt="Linkedin"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="#" target="_blank"
-          ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-        /></a>
-    </div>
+  
     <!-- Footer section -->
     <footer>
         <p class="copy">&copy; Copyright 2022</p>
@@ -305,6 +238,7 @@
 
     <!-- Website scripts -->
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/gallery.js"></script>
     <!-- Ion icons scripts -->
     <script
       type="module"
