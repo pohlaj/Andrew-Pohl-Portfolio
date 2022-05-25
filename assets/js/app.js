@@ -1,4 +1,5 @@
 
+
 // scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 

@@ -18,6 +18,8 @@
   "homepage": "https://github.com/pohlaj/Andrew-Pohl-Portfolio#readme",
   "dependencies": {
     "cube-gallery-js": "^1.0.0",
-    "mdb-ui-kit": "^4.0.0"
+    "firebase": "^9.8.1",
+    "mdb-ui-kit": "^4.0.0",
+    "rellax": "^1.12.1"
   }
 }
